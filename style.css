@@ -1,0 +1,110 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+
+.header{
+    background-color: #8f2226;
+    padding-bottom: 6px;
+}
+
+.navbar-brand{
+    text-transform: uppercase;
+    font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.card-movie{
+    height: auto;
+    width: 302px;
+    background-color: white;
+    margin-bottom: 10px;
+    border: 2px solid white;
+}
+
+.card-movie > img{
+    width: 298px;
+    height: 431px;
+}
+
+.card-title > h3{
+    
+    background-color: white;
+    margin: 0px;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 8px;
+}
+
+.paginacion {
+	bottom: 0;
+    right: 0px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #8f2226;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: white;
+    color: black;
+}
+
+@media (max-width: 1292px) {
+    .cards{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 977px) {
+    .cards{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 660px) {
+    .cards{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+}
